@@ -9,7 +9,7 @@ from bson import ObjectId
 
 app = Flask(__name__)
 
-app.config["MONGO_URI"] = "mongodb://localhost:27017/quizmaker"
+app.config["MONGO_URI"] = "mongodb+srv://adarshmauryacs22:6mmxgkc0f6uHC809@om.u1jhh.mongodb.net/quizee"
 app.config["SECRET_KEY"] = "your_secret_key" 
 
 mongo = PyMongo(app)
