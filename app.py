@@ -13,7 +13,7 @@ app.config["MONGO_URI"] = "mongodb+srv://adarshmauryacs22:6mmxgkc0f6uHC809@om.u1
 app.config["SECRET_KEY"] = "your_secret_key" 
 
 mongo = PyMongo(app)
-CORS(app, origins=["https://quiz-maker-adarsh-kumar-mauryas-projects.vercel.app/"], supports_credentials=True)
+CORS(app, origins=["https://quiz-maker-adarsh-kumar-mauryas-projects.vercel.app"], supports_credentials=True)
 
 def generate_token(_id,full_name, user_type):
     payload = {
